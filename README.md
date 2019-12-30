@@ -2,7 +2,7 @@ FileHttpServer was originally written to support a series of [blog postings](htt
 moving an ancient Ant build to Maven. That series needed a simple HTTP server to 
 act as a Maven repository manager.
 
-FileHttpServer is a very simple fileonly serving HTTP server. It can only GET 
+FileHttpServer is a very simple file-only serving HTTP server. It can only GET 
 and PUT files. There are no authorization or other safety limitations. To use,
 build 
 

@@ -50,6 +50,7 @@ public final class FileHttpServer {
     }
 
     public FileHttpServer(int port, File root, int concurrency) throws IOException {
+        LOGGER.log(Level.INFO, "Serving {0} at http://localhost:{1,number,0}/", new Object[]{ root.getCanonicalPath(), port });
         HttpServer server = HttpServer.create(new InetSocketAddress(port), concurrency);
         server.setExecutor(Executors.newFixedThreadPool(concurrency));
         server.createContext("/", new ContentHandler(root));

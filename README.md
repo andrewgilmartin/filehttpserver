@@ -10,6 +10,6 @@ build
 
 and then run
 
-    java -cp target/classes com.andrewgilmartin.http.FileHttpServer port directory concurrency
+    java -jar target/filehttpserver-1.0.0.jar port directory concurrency
 
 END
